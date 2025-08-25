@@ -205,6 +205,49 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Radial Button for type of news letter -->
+                            <div>
+                                <p>
+                                    <h5>Let me know what type of newsletter you would like!</h5>
+                                    <input type="radio" id="Weekly_Newsletter" name="Weekly_letter" value="Weekly">
+                                    <label for="Weekly">Weekly Newsletter</label><br>
+                                    <input type="radio" id="Monthly_Newsletter" name="monthly_letter" value="Monthly">
+                                    <label for="Monthly">Monthly Newsletter</label><br>
+                                    <input type="radio" id="Monthly_Deals" name="monthly_deals" value="Deals">
+                                    <label for="Deals">Monthly Deals</label><br>
+                            </div>
+                            <!-- Check Boxes for favorite animal -->
+                            <div>
+                                <p>
+                                    <h5>What is your favorite Animal!</h5>
+                                    <input type="checkbox" id="Tiger" name="Tiger" value="Tiger">
+                                    <label for="Tiger">Tigers are the best!</label><br>
+                                    <input type="checkbox" id="Elephant" name="Elephant" value="Elephant">
+                                    <label for="Elephant">Elephants are the best!</label><br>
+                                    <input type="checkbox" id="Gorilla" name="Gorilla" value="Gorilla">
+                                    <label for="Gorilla">Gorillas are the best!</label><br>
+                                    <input type="checkbox" id="Giraffe" name="Giraffe" value="Giraffe">
+                                    <label for="Giraffe">Giraffes are the best!</label><br>
+                                    <input type="checkbox" id="Alligator" name="Alligator" value="Alligator">
+                                    <label for="Alligator">Alligators are the best!</label><br>
+                            </div>
+                            <!-- Drop down menu for what Zoo you want to know more about -->
+                            <div>
+                                <p>
+                                    <h5>Please Select a Zoo:</h5>
+                                    <label for="zoo_of_interest">Zoo:  </label>
+                                    <select name="zoo_of_interest" id="zoo_of_interest">
+                                        <option value="   " selected>Select Zoo</option>
+                                        <option value="LA Zoo" selected>LA Zoo</option>
+                                        <option value="Sandiego Zoo" selected>Sandiego Zoo</option>
+                                        <option value="Sandiego Safari Park" selected>Sandiego Safari Park</option>
+                                        <option value="Santa Ana Zoo" selected>Santa Ana Zoo</option>
+                                        <option value="OC Zoo" selected>OC Zoo</option>
+                                        <option value="SanFrancisco Zoo" selected>SanFrancisco Zoo</option>
+                                    </select>
+                                    <input type="text" id="other_zoo"
+
+                            </div>
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -250,7 +293,7 @@
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
                         </form>
-                    </div>
+                </div>
                 </div>
             </div>
         </section>
